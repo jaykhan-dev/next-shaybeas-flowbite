@@ -14,9 +14,9 @@ export default function Navigation() {
       className="mr-3 h-6 sm:h-9"
       alt="Flowbite Logo"
     /> */}
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+        <h1 className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
           ShayBeas Enterprises
-        </span>
+        </h1>
       </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse className="text-white">

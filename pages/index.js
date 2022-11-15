@@ -26,16 +26,14 @@ export default function Home() {
       <Head>
         <title>ShayBeas Enterprises</title>
       </Head>
-      <main className="grid place-items-center bg-gray-100">
-        <Hero />
-      </main>
+      <Hero />
       <Houses />
       <CTAOne />
-      <Prices />
       <Stats />
       <ContentOne />
       <Carousel />
       <ContentGrid />
+      <Prices />
       <TabsFlowBite />
       <Blog />
       <Testimonials />

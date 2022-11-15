@@ -1,7 +1,13 @@
+import Lottie from "lottie-react";
+import RedBuildings from "../public/lottie/real-estate-red-buildings.json";
+
 export default function Contact() {
   return (
     <div className="flex justify-center">
       <div className="lg:w-2/3 w-full my-20 p-4">
+        <div className="flex justify-center">
+          <Lottie animationData={RedBuildings} className="w-64 h-64" />
+        </div>
         <form>
           <h1 className="lg:text-6xl text-4xl font-bold my-8 text-center">
             Contact Us

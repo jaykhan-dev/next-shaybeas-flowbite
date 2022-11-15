@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Michroma&family=Share+Tech+Mono&display=swap");
+/*
+font-family: 'Lexend', sans-serif;
+font-family: 'Michroma', sans-serif;
+font-family: 'Share Tech Mono', monospace;
+*/
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,4 +15,18 @@ body {
   margin: 0;
   display: block;
   overflow-x: hidden;
+}
+
+h1 {
+  font-family: "Michroma", sans-serif;
+}
+
+h2,
+h3,
+p {
+  font-family: "Lexend", sans-serif;
+}
+
+button {
+  font-family: "Share Tech Mono", monospace;
 }

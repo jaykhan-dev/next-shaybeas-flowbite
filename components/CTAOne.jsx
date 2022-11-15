@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Lottie from "lottie-react";
+import RealEstate from "../public/lottie/real-estate.json";
 
 export default function CTAOne() {
   return (
@@ -38,12 +40,7 @@ export default function CTAOne() {
           </a>
         </div>
         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-          <Image
-            src="/images/howlingwolf.jpg"
-            alt="mockup"
-            width={600}
-            height={500}
-          />
+          <Lottie animationData={RealEstate} />
         </div>
       </div>
     </section>
