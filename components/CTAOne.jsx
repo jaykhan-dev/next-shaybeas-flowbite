@@ -40,7 +40,7 @@ export default function CTAOne() {
             Speak to Sales
           </a>
         </div>
-        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+        <div class="lg:mt-0 lg:col-span-5 lg:flex">
           <Image
             src={PropertyGIF}
             width={400}

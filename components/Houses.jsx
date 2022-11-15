@@ -80,7 +80,7 @@ export default function Houses() {
                 Bonnie drives the technical strategy of the flowbite platform
                 and brand.
               </p>
-              <button className="uppercase font-bold my-4 hover:translate-x-4 duration-300">
+              <button className="uppercase my-4 hover:translate-x-4 duration-300">
                 Go to listing
               </button>
             </div>
@@ -104,7 +104,7 @@ export default function Houses() {
                 Jese drives the technical strategy of the flowbite platform and
                 brand.
               </p>
-              <button className="uppercase font-bold my-4 hover:translate-x-4 duration-300">
+              <button className="uppercase my-4 hover:translate-x-4 duration-300">
                 Go to listing
               </button>
             </div>
@@ -130,7 +130,7 @@ export default function Houses() {
                 Michael drives the technical strategy of the flowbite platform
                 and brand.
               </p>
-              <button className="uppercase font-bold my-4 hover:translate-x-4 duration-300">
+              <button className="uppercase my-4 hover:translate-x-4 duration-300">
                 Go to listing
               </button>
             </div>
@@ -156,7 +156,7 @@ export default function Houses() {
                 Lana drives the technical strategy of the flowbite platform and
                 brand.
               </p>
-              <button className="uppercase font-bold my-4 hover:translate-x-4 duration-300">
+              <button className="uppercase my-4 hover:translate-x-4 duration-300">
                 Go to listing
               </button>
             </div>

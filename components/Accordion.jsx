@@ -5,87 +5,50 @@ export default function AccordionComp() {
     <div className="flex justify-center">
       <div className="lg:w-2/3 my-20">
         <Accordion>
-          <Accordion.Panel>
-            <Accordion.Title>What is Flowbite?</Accordion.Title>
+          <Accordion.Panel className="">
+            <Accordion.Title>
+              How long does it take to buy a home?
+            </Accordion.Title>
             <Accordion.Content>
               <p className="mb-2 text-gray-500 dark:text-gray-400">
-                Flowbite is an open-source library of interactive components
-                built on top of Tailwind CSS including buttons, dropdowns,
-                modals, navbars, and more.
-              </p>
-              <p className="text-gray-500 dark:text-gray-400">
-                Check out this guide to learn how to{" "}
-                <a
-                  href="https://flowbite.com/docs/getting-started/introduction/"
-                  className="text-blue-600 hover:underline dark:text-blue-500"
-                >
-                  get started
-                </a>{" "}
-                and start developing websites even faster with components on top
-                of Tailwind CSS.
+                From start (searching online) to finish (closing escrow), buying
+                a home takes about 10 to 12 weeks. Once a home is selected an
+                the offer is accepted, the average time to complete the escrow
+                period on a home is 30 to 45 days (under normal market
+                conditions). Though, well-prepared home buyers who pay cash have
+                been known to purchase properties faster than that.
               </p>
             </Accordion.Content>
           </Accordion.Panel>
           <Accordion.Panel>
-            <Accordion.Title>Is there a Figma file available?</Accordion.Title>
+            <Accordion.Title>What is a stratified market?</Accordion.Title>
             <Accordion.Content>
               <p className="mb-2 text-gray-500 dark:text-gray-400">
-                Flowbite is first conceptualized and designed using the Figma
-                software so everything you see in the library has a design
-                equivalent in our Figma file.
-              </p>
-              <p className="text-gray-500 dark:text-gray-400">
-                Check out the{" "}
-                <a
-                  href="https://flowbite.com/figma/"
-                  className="text-blue-600 hover:underline dark:text-blue-500"
-                >
-                  Figma design system
-                </a>{" "}
-                based on the utility classes from Tailwind CSS and components
-                from Flowbite.
+                A stratified market happens where supply and demand
+                characteristics differ by price point, in the same area
+                (typically by city). For example, home sales for properties
+                above $1.5M may be brisk (seller’s market) while homes under
+                $750k may be sluggish (buyer’s market). This scenario comes
+                along every so often in West Coast cities where international
+                investors - looking to park their money in the United States -
+                buy expensive real estate. At the same time, home sales activity
+                in mid-priced homes could be entirely different.
               </p>
             </Accordion.Content>
           </Accordion.Panel>
           <Accordion.Panel>
             <Accordion.Title>
-              What are the differences between Flowbite and Tailwind UI?
+              What kind of credit score do I need to buy a home?
             </Accordion.Title>
             <Accordion.Content>
               <p className="mb-2 text-gray-500 dark:text-gray-400">
-                The main difference is that the core components from Flowbite
-                are open source under the MIT license, whereas Tailwind UI is a
-                paid product. Another difference is that Flowbite relies on
-                smaller and standalone components, whereas Tailwind UI offers
-                sections of pages.
+                Most loan programs require a FICO score of 620 or better.
+                Borrowers with higher credit scores represent less risk to the
+                lender, often resulting in a lower the down payment requirement
+                and better interest rate. Conversely, home shoppers with lower
+                credit scores may need to bring more money to the table (or
+                accept a higher interest rate) to offset the lender’s risk.
               </p>
-              <p className="mb-2 text-gray-500 dark:text-gray-400">
-                However, we actually recommend using both Flowbite, Flowbite
-                Pro, and even Tailwind UI as there is no technical reason
-                stopping you from using the best of two worlds.
-              </p>
-              <p className="mb-2 text-gray-500 dark:text-gray-400">
-                Learn more about these technologies:
-              </p>
-              <ul className="list-disc pl-5 text-gray-500 dark:text-gray-400">
-                <li>
-                  <a
-                    href="https://flowbite.com/pro/"
-                    className="text-blue-600 hover:underline dark:text-blue-500"
-                  >
-                    Flowbite Pro
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://tailwindui.com/"
-                    rel="nofollow"
-                    className="text-blue-600 hover:underline dark:text-blue-500"
-                  >
-                    Tailwind UI
-                  </a>
-                </li>
-              </ul>
             </Accordion.Content>
           </Accordion.Panel>
         </Accordion>

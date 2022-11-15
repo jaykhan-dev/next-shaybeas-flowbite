@@ -15,6 +15,7 @@ body {
   margin: 0;
   display: block;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 h1 {
