@@ -6,7 +6,7 @@ export default function Navigation() {
     <Navbar
       fluid={true}
       rounded={true}
-      className="z-50 fixed top-0 w-full border-b border-black/10 bg-gray-200/20 backdrop-blur-md"
+      className="z-50 fixed top-0 w-full border-b border-black/10 bg-gray-200/60 backdrop-blur-md"
     >
       <Navbar.Brand href="/" className="flex items-center">
         {/* <img

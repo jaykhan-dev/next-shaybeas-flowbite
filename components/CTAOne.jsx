@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PropertyGIF from "../public/lottie/property.gif";
 import Lottie from "lottie-react";
 import RealEstate from "../public/lottie/real-estate.json";
 
@@ -40,7 +41,13 @@ export default function CTAOne() {
           </a>
         </div>
         <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-          <Lottie animationData={RealEstate} />
+          <Image
+            src={PropertyGIF}
+            width={400}
+            height={400}
+            alt="Property Lottie Files GIF"
+          />
+          {/* <Lottie animationData={RealEstate} /> */}
         </div>
       </div>
     </section>
