@@ -81,10 +81,9 @@ export default function Contact() {
         </div>
       </div>
 
-      {/* CITYSCAPE */}
-      <div className="grid place-items-center bg-gradient-to-r from-white/0 via-white/50 to-white/0 h-64">
+      {/* <div className="grid place-items-center bg-gradient-to-r from-white/0 via-white/50 to-white/0 h-64">
         <Image src={CityScape} height={600} width={600} alt="Cityscape" />
-      </div>
+      </div> */}
     </>
   );
 }

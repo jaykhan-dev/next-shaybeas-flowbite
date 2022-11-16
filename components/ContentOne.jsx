@@ -41,10 +41,27 @@ export default function ContentOne() {
     });
   }, []);
 
+  useEffect(() => {
+    gsap.set("#text", { opacity: 0 });
+    gsap.to("#text", {
+      scrollTrigger: {
+        trigger: "#text",
+        scrub: 1,
+        start: "top bottom",
+        end: "top top",
+      },
+      opacity: 1,
+      ease: "none",
+    });
+  });
+
   return (
     <section class="bg-white dark:bg-gray-900 my-20">
       <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-        <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+        <div
+          class="font-light text-gray-500 sm:text-lg dark:text-gray-400"
+          id="text"
+        >
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
             We didnt reinvent the wheel
           </h2>

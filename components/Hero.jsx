@@ -10,7 +10,7 @@ import RemaxLogo from "../public/images/logos/remax-logo.png";
 export default function Hero() {
   return (
     <section className={styles.hero} id="hero-section">
-      <div className="bg-gradient-to-b from-white/40 to-white">
+      <div className="bg-gradient-to-b from-white/60 to-white">
         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
           <a
             href="#"

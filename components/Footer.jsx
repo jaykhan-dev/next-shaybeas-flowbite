@@ -4,7 +4,7 @@ import styles from "./hero.module.css";
 export default function FooterComp() {
   return (
     <footer className={styles.footer}>
-      <div className="p-4 bg-blue-300/90 sm:p-6 dark:bg-gray-900">
+      <div className="p-4 bg-white/90 border-t border-black/10 sm:p-6 dark:bg-gray-900">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
             <a href="https://flowbite.com/" class="flex items-center">
@@ -15,9 +15,9 @@ export default function FooterComp() {
                 width={50}
                 height={50}
               />
-              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              <h1 class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                 ShayBeas Enterprises
-              </span>
+              </h1>
             </a>
             <p className="text-sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit

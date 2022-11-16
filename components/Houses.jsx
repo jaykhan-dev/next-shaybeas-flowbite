@@ -14,27 +14,32 @@ export default function Houses() {
           </p>
         </div>
         {/* SEARCH */}
-        <div className="grid my-20 p-4 bg-gray-100 rounded shadow-xl">
+        <div className="grid my-20 p-4 bg-blue-500 rounded shadow-xl">
           <div>
-            <form action="" className="grid lg:grid-cols-3 gap-4">
+            <form
+              action=""
+              className="grid lg:grid-cols-3 place-items-center gap-4"
+            >
               {/* SEARCH BAR */}
-              <div className="col-span-2">
+              <div className="lg:col-span-2 w-full">
                 <div className="flex items-center space-x-2">
                   <div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="w-6 h-6"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-                      />
-                    </svg>
+                    <button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                        />
+                      </svg>
+                    </button>
                   </div>
                   <input
                     type="search"
@@ -45,10 +50,10 @@ export default function Houses() {
               </div>
 
               {/* SELECT OPTION */}
-              <div>
+              <div className="flex justify-center w-full">
                 <select
                   id="countries"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  class="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 >
                   <option>Buy</option>
                   <option>Sell</option>
