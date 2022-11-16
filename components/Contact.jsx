@@ -6,7 +6,11 @@ import ContactGraphic from "../public/lottie/contact-mail.gif";
 export default function Contact() {
   return (
     <>
-      <div className="flex justify-center">
+      <section
+        className="flex justify-center"
+        aria-label="contact"
+        id="contact"
+      >
         <div className="lg:w-1/2 w-full my-20 p-4">
           <div className="flex justify-center">
             <Image
@@ -79,11 +83,12 @@ export default function Contact() {
             </button>
           </form>
         </div>
-      </div>
+      </section>
 
-      {/* <div className="grid place-items-center bg-gradient-to-r from-white/0 via-white/50 to-white/0 h-64">
+      <div className="grid place-items-center bg-gradient-to-r from-white/0 via-white/50 to-white/0 relative">
         <Image src={CityScape} height={600} width={600} alt="Cityscape" />
-      </div> */}
+        <div className="h-full lg:w-1/2 absolute w-full top-0 bg-gradient-to-r from-white via-white/80 to-white"></div>
+      </div>
     </>
   );
 }

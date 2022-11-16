@@ -1,5 +1,6 @@
 import { Navbar } from "flowbite-react";
 import Image from "next/image";
+import { useRef, useEffect } from "react";
 
 export default function Navigation() {
   return (
@@ -20,15 +21,17 @@ export default function Navigation() {
       </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse className="text-white">
-        <Navbar.Link href="/navbars" active={true} className="">
-          Home
+        <Navbar.Link href="/listings" className="">
+          Listings
         </Navbar.Link>
-        <Navbar.Link href="/navbars" className="">
-          About
+
+        <Navbar.Link href="#blog" scroll={true} className="">
+          Blog
         </Navbar.Link>
-        <Navbar.Link href="/navbars">Services</Navbar.Link>
-        <Navbar.Link href="/navbars">Pricing</Navbar.Link>
-        <Navbar.Link href="/navbars">Contact</Navbar.Link>
+
+        <Navbar.Link href="#contact" scroll={true}>
+          Contact
+        </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   );

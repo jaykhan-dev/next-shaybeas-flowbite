@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Houses() {
   return (
-    <section class="bg-white dark:bg-gray-900">
+    <section class="bg-white dark:bg-gray-900" id="listings">
       <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
         <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
@@ -85,9 +86,11 @@ export default function Houses() {
                 Bonnie drives the technical strategy of the flowbite platform
                 and brand.
               </p>
-              <button className="uppercase my-4 hover:translate-x-4 duration-300">
-                Go to listing
-              </button>
+              <Link href="/listings/house-1">
+                <button className="uppercase my-4 hover:translate-x-4 duration-300">
+                  Go to listing
+                </button>
+              </Link>
             </div>
           </div>
           <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">

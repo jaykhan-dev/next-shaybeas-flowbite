@@ -3,12 +3,14 @@ import Blog1 from "../public/images/blogs/blog.webp";
 import Blog2 from "../public/images/blogs/blog4.webp";
 import Blog3 from "../public/images/blogs/blog8.webp";
 import BlogGIF from "../public/lottie/blog1.gif";
+import Link from "next/link";
 
 export default function Blog() {
   return (
     <section
       className="flex justify-center my-20 p-2"
       aria-label="blog section"
+      id="blog"
     >
       <div className="lg:w-2/3 grid place-items-center">
         <Image src={BlogGIF} width={300} height={300} alt="Blog gif" />
@@ -32,9 +34,11 @@ export default function Blog() {
             </div>
             <h2 className="text-3xl font-bold my-4">Blog Header 1</h2>
             <p>Paragraph for the blog!</p>
-            <button className="uppercase my-4 hover:translate-x-2 duration-300">
-              Read More
-            </button>
+            <Link href="/blogs/blog-1">
+              <button className="uppercase my-4 hover:translate-x-2 duration-300">
+                Read More
+              </button>
+            </Link>
           </div>
 
           {/* COL2 */}

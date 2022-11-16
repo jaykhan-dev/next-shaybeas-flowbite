@@ -26,7 +26,7 @@ export default function Testimonials() {
           <figcaption class="flex items-center justify-center mt-6 space-x-3">
             <Image
               class="w-24 h-24 rounded-full"
-              src="/images/eagle.jpeg"
+              src="/images/dune.jpeg"
               alt="profile picture"
               width={50}
               height={50}
