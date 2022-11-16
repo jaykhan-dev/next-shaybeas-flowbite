@@ -1,11 +1,13 @@
+import Houses from "../components/Houses";
 export default function Listings() {
   return (
     <>
-      <section className="h-screen grid place-items-center">
+      <div className="grid place-items-center">
         <div>
           <h2>Listings</h2>
+          <Houses />
         </div>
-      </section>
+      </div>
     </>
   );
 }

@@ -1,9 +1,27 @@
 import Image from "next/image";
 import CityScape from "../public/images/city-scape-footer.svg";
-// import RealEstateContact from "../public/lottie/real-estate-contact.gif";
+import { useEffect } from "react";
 import ContactGraphic from "../public/lottie/contact-mail.gif";
+import gsap from "gsap/dist/gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 export default function Contact() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    gsap.set(".image", { opacity: 0, scale: 0 });
+    gsap.to(".image", {
+      scrollTrigger: {
+        trigger: ".image",
+        scrub: 1,
+        start: "top bottom",
+        end: "top center",
+      },
+      opacity: 1,
+      scale: 1,
+    });
+  });
+
   return (
     <>
       <section
@@ -85,9 +103,9 @@ export default function Contact() {
         </div>
       </section>
 
-      <div className="grid place-items-center bg-gradient-to-r from-white/0 via-white/50 to-white/0 relative">
+      <div className="image grid place-items-center bg-gradient-to-r from-white/0 via-white/50 to-white/0 relative">
         <Image src={CityScape} height={600} width={600} alt="Cityscape" />
-        <div className="h-full lg:w-1/2 absolute w-full top-0 bg-gradient-to-r from-white via-white/80 to-white"></div>
+        <div className="h-full lg:w-1/2 absolute w-full top-0 bg-gradient-to-r from-white via-white/20 to-white"></div>
       </div>
     </>
   );

@@ -1,13 +1,43 @@
 import Image from "next/image";
 import PropertyGIF from "../public/lottie/property.gif";
-import Lottie from "lottie-react";
-import RealEstate from "../public/lottie/real-estate.json";
+import { useEffect } from "react";
+import gsap from "gsap/dist/gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 export default function CTAOne() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    gsap.set("#text", { opacity: 0, x: -20 });
+    gsap.to("#text", {
+      scrollTrigger: {
+        trigger: "#text",
+        scrub: 1,
+        start: "top bottom",
+        end: "top top",
+      },
+      x: 0,
+      opacity: 1,
+    });
+  });
+
+  useEffect(() => {
+    gsap.set("#gif", { scale: 0 });
+    gsap.to("#gif", {
+      scrollTrigger: {
+        trigger: "#gif",
+        scrub: 1,
+        start: "top bottom",
+        end: "top center",
+      },
+      scale: 1,
+    });
+  });
+
   return (
     <section class="bg-white dark:bg-gray-900">
       <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div class="mr-auto place-self-center lg:col-span-7">
+        <div class="mr-auto place-self-center lg:col-span-7" id="text">
           <h2 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-4xl dark:text-white">
             Payments tool for software companies
           </h2>
@@ -40,7 +70,7 @@ export default function CTAOne() {
             Speak to Sales
           </a>
         </div>
-        <div class="lg:mt-0 lg:col-span-5 lg:flex">
+        <div class="lg:mt-0 lg:col-span-5 lg:flex" id="gif">
           <Image
             src={PropertyGIF}
             width={400}

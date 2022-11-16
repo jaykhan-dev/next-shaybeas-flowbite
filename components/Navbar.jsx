@@ -25,11 +25,11 @@ export default function Navigation() {
           Listings
         </Navbar.Link>
 
-        <Navbar.Link href="#blog" scroll={true} className="">
+        <Navbar.Link href="/blogs" scroll={true} className="">
           Blog
         </Navbar.Link>
 
-        <Navbar.Link href="#contact" scroll={true}>
+        <Navbar.Link href="/contact" scroll={true}>
           Contact
         </Navbar.Link>
       </Navbar.Collapse>

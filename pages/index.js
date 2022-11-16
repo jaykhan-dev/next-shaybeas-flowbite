@@ -10,7 +10,6 @@ import CTAOne from "../components/CTAOne";
 import Accordion from "../components/Accordion";
 import Prices from "../components/Prices";
 import { useEffect } from "react";
-import Contact from "../components/Contact";
 import Stats from "../components/Stats";
 import Houses from "../components/Houses";
 import Testimonials from "../components/Testimonials";
@@ -38,7 +37,6 @@ export default function Home() {
       <Testimonials />
       <Subscribe />
       <Accordion />
-      <Contact />
     </>
   );
 }

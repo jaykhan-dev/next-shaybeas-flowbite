@@ -1,10 +1,43 @@
 import Image from "next/image";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { useEffect } from "react";
 
 export default function ContentGrid() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    gsap.set("#header", { x: -50, opacity: 0 });
+    gsap.to("#header", {
+      scrollTrigger: {
+        trigger: "#header",
+        scrub: 1,
+        start: "top bottom",
+        end: "top top",
+      },
+      opacity: 1,
+      x: 0,
+    });
+  });
+
+  useEffect(() => {
+    gsap.set("#content", { opacity: 0, y: 100 });
+    gsap.to("#content", {
+      scrollTrigger: {
+        trigger: "#content",
+        scrub: 1,
+        start: "top bottom",
+        end: "top top",
+      },
+      opacity: 1,
+      y: 0,
+    });
+  });
+
   return (
     <section class="bg-white dark:bg-gray-900">
       <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-        <div class="max-w-screen-md mb-8 lg:mb-16">
+        <div id="header" class="max-w-screen-md mb-8 lg:mb-16">
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
             Designed for business teams like yours
           </h2>
@@ -13,7 +46,10 @@ export default function ContentGrid() {
             and capital can unlock long-term value and drive economic growth.
           </p>
         </div>
-        <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+        <div
+          id="content"
+          class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0"
+        >
           <div>
             <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
               <svg

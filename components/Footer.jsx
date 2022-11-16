@@ -1,6 +1,3 @@
-import Image from "next/image";
-import styles from "./hero.module.css";
-
 export default function FooterComp() {
   return (
     <footer class="bg-gray-50 dark:bg-gray-800">
