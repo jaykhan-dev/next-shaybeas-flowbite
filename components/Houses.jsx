@@ -1,21 +1,72 @@
 import Image from "next/image";
 import Link from "next/link";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { useEffect } from "react";
 
 export default function Houses() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    gsap.set("#header-text", { x: 50, opacity: 0 });
+    gsap.to("#header-text", {
+      scrollTrigger: {
+        trigger: "#header-text",
+        scrub: 1,
+        start: "top bottom",
+        end: "top center",
+      },
+      opacity: 1,
+      x: 0,
+    });
+  }, []);
+
+  useEffect(() => {
+    gsap.set("#search-bar", { opacity: 0 });
+    gsap.to("#search-bar", {
+      scrollTrigger: {
+        trigger: "#search-bar",
+        scrub: 1,
+        start: "top bottom",
+        end: "top center",
+      },
+      opacity: 1,
+    });
+  }, []);
+
+  useEffect(() => {
+    gsap.set("#houses", { scale: 0.75 });
+    gsap.to("#houses", {
+      scrollTrigger: {
+        trigger: "#houses",
+        scrub: 1,
+        start: "top bottom",
+        end: "top center",
+      },
+      scale: 1,
+    });
+  }, []);
+
   return (
     <section class="bg-white dark:bg-gray-900" id="listings">
       <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
-        <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+        <div
+          id="header-text"
+          class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16"
+        >
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
             Featured Leads
           </h2>
           <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
-            Explore the whole collection of open-source web components and
-            elements built with the utility classes from Tailwind
+            Explore our leads and listings and if you have more questions, let
+            us know below!.
           </p>
         </div>
         {/* SEARCH */}
-        <div className="grid my-20 p-4 bg-blue-500 rounded shadow-xl">
+        <div
+          id="search-bar"
+          className="grid my-20 p-4 bg-blue-500 rounded shadow-xl"
+        >
           <div>
             <form
               action=""
@@ -64,7 +115,7 @@ export default function Houses() {
             </form>
           </div>
         </div>
-        <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+        <div id="houses" class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
           <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <Image
@@ -77,14 +128,13 @@ export default function Houses() {
             </a>
             <div class="p-5">
               <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <a href="#">Bonnie Green</a>
+                <a href="#">Southern Pines</a>
               </h3>
-              <span class="text-gray-500 dark:text-gray-400">
-                CEO & Web Developer
+              <span class="text-gray-500 text-xl font-bold my-4 dark:text-gray-400">
+                $380, 000
               </span>
               <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
-                Bonnie drives the technical strategy of the flowbite platform
-                and brand.
+                Self-guided Model Open Daily
               </p>
               <Link href="/listings/house-1">
                 <button className="uppercase my-4 hover:translate-x-4 duration-300">
@@ -105,12 +155,13 @@ export default function Houses() {
             </a>
             <div class="p-5">
               <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <a href="#">Jese Leos</a>
+                <a href="#">Stepping Stone</a>
               </h3>
-              <span class="text-gray-500 dark:text-gray-400">CTO</span>
+              <span class="text-gray-500 text-xl font-bold my-4 dark:text-gray-400">
+                $465,000
+              </span>
               <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
-                Jese drives the technical strategy of the flowbite platform and
-                brand.
+                Model available to tour
               </p>
               <button className="uppercase my-4 hover:translate-x-4 duration-300">
                 Go to listing
@@ -129,14 +180,13 @@ export default function Houses() {
             </a>
             <div class="p-5">
               <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <a href="#">Michael Gough</a>
+                <a href="#">Parkside at Blueberry Hill</a>
               </h3>
-              <span class="text-gray-500 dark:text-gray-400">
-                Senior Front-end Developer
+              <span class="text-gray-500 text-xl font-bold my-4 dark:text-gray-400">
+                $500,000
               </span>
               <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
-                Michael drives the technical strategy of the flowbite platform
-                and brand.
+                Selling from an interim location!
               </p>
               <button className="uppercase my-4 hover:translate-x-4 duration-300">
                 Go to listing
@@ -155,14 +205,13 @@ export default function Houses() {
             </a>
             <div class="p-5">
               <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                <a href="#">Lana Byrd</a>
+                <a href="#">Tierra del Sol</a>
               </h3>
-              <span class="text-gray-500 dark:text-gray-400">
-                Marketing & Sale
+              <span class="text-gray-500 text-xl font-bold my-4 dark:text-gray-400">
+                $640,000
               </span>
               <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
-                Lana drives the technical strategy of the flowbite platform and
-                brand.
+                Model available to tour
               </p>
               <button className="uppercase my-4 hover:translate-x-4 duration-300">
                 Go to listing

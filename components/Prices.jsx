@@ -1,17 +1,62 @@
+import { useRef, useEffect } from "react";
+import gsap from "gsap/dist/gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+
 export default function PricesComp() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    gsap.set("#header", { opacity: 0, y: -50 });
+    gsap.to("#header", {
+      scrollTrigger: {
+        trigger: "#header",
+        scrub: 1,
+        start: "top bottom",
+        end: "top center",
+      },
+      y: 0,
+      opacity: 1,
+      ease: "none",
+      duration: 3,
+    });
+  });
+
+  useEffect(() => {
+    gsap.set("#prices", { scale: 0.8, opacity: 0 });
+    gsap.to("#prices", {
+      scrollTrigger: {
+        trigger: "#prices",
+        scrub: 1,
+        start: "top bottom",
+        end: "top center",
+      },
+      scale: 1,
+      opacity: 1,
+      ease: "none",
+      duration: 3,
+    });
+  });
+
   return (
     <section class="bg-white dark:bg-gray-900 flex justify-center" id="pricing">
       <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-        <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+        <div
+          id="header"
+          class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12"
+        >
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
             Designed for business teams like yours
           </h2>
           <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">
-            Here at Flowbite we focus on markets where technology, innovation,
-            and capital can unlock long-term value and drive economic growth.
+            We have an incredible platform to close more deals, manage your
+            workflow and pipeline, collect customer payments and have all your
+            analytics reports in one place.
           </p>
         </div>
-        <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+        <div
+          id="prices"
+          class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0"
+        >
           <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
             <h3 class="mb-4 text-2xl font-semibold">Starter</h3>
             <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">

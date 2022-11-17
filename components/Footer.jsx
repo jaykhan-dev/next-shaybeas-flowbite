@@ -1,26 +1,28 @@
+import styles from "./hero.module.css";
+
 export default function FooterComp() {
   return (
-    <footer class="bg-gray-50 dark:bg-gray-800">
-      <div class="p-4 py-6 mx-auto max-w-screen-xl md:p-8 lg:p-10">
-        <div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
+    <footer class={styles.footer}>
+      <div class="bg-black/80 text-white p-4 py-6 md:p-8 lg:p-10 grid place-items-center">
+        <div class="grid grid-cols-2 gap-8 md:grid-cols-2 lg:grid-cols-4 lg:place-items-top">
           <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+            <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-white">
               Company
             </h2>
-            <ul class="text-gray-500 dark:text-gray-400">
+            <ul class="text-gray-100 dark:text-gray-400">
               <li class="mb-4">
                 <a href="#" class=" hover:underline">
-                  About
+                  Leads
                 </a>
               </li>
               <li class="mb-4">
                 <a href="#" class="hover:underline">
-                  Careers
+                  Listings
                 </a>
               </li>
               <li class="mb-4">
                 <a href="#" class="hover:underline">
-                  Brand Center
+                  Realtors
                 </a>
               </li>
               <li class="mb-4">
@@ -31,10 +33,10 @@ export default function FooterComp() {
             </ul>
           </div>
           <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+            <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-white">
               Help center
             </h2>
-            <ul class="text-gray-500 dark:text-gray-400">
+            <ul class="text-gray-100 dark:text-gray-400">
               <li class="mb-4">
                 <a href="#" class="hover:underline">
                   Discord Server
@@ -58,10 +60,10 @@ export default function FooterComp() {
             </ul>
           </div>
           <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+            <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-white">
               Legal
             </h2>
-            <ul class="text-gray-500 dark:text-gray-400">
+            <ul class="text-gray-100 dark:text-gray-400">
               <li class="mb-4">
                 <a href="#" class="hover:underline">
                   Privacy Policy
@@ -80,37 +82,10 @@ export default function FooterComp() {
             </ul>
           </div>
           <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-              Company
-            </h2>
-            <ul class="text-gray-500 dark:text-gray-400">
-              <li class="mb-4">
-                <a href="#" class=" hover:underline">
-                  About
-                </a>
-              </li>
-              <li class="mb-4">
-                <a href="#" class="hover:underline">
-                  Careers
-                </a>
-              </li>
-              <li class="mb-4">
-                <a href="#" class="hover:underline">
-                  Brand Center
-                </a>
-              </li>
-              <li class="mb-4">
-                <a href="#" class="hover:underline">
-                  Blog
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+            <h2 class="mb-6 text-sm font-semibold text-gray-500 uppercase dark:text-white">
               Download
             </h2>
-            <ul class="text-gray-500 dark:text-gray-400">
+            <ul class="text-gray-100 dark:text-gray-400">
               <li class="mb-4">
                 <a href="#" class="hover:underline">
                   iOS
@@ -136,9 +111,9 @@ export default function FooterComp() {
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div class="text-center">
-          <a
+          <h1
             href="#"
-            class="flex justify-center items-center mb-5 text-2xl font-semibold text-gray-900 dark:text-white"
+            class="flex justify-center items-center mb-5 text-2xl font-semibold text-gray-100 dark:text-white"
           >
             <svg
               class="mr-2 h-8"
@@ -182,116 +157,12 @@ export default function FooterComp() {
                 d="M20.0721 31.8357C20.0744 31.8352 20.0739 31.8332 20.0717 31.8337C19.6252 31.925 19.1172 32.0097 18.5581 32.0721C15.638 32.3978 12.7174 31.4643 10.5286 29.5059C8.33986 27.5474 7.09347 24.7495 7.09348 21.814L7.09347 21.0222L1.59546 21.3602C4.1488 28.8989 12.1189 33.5118 20.0411 31.8421C20.0449 31.8413 20.0582 31.8387 20.0721 31.8357Z"
                 fill="url(#paint8_linear_11430_22515)"
               />
-              <defs>
-                <linearGradient
-                  id="paint0_linear_11430_22515"
-                  x1="20.8102"
-                  y1="23.9532"
-                  x2="23.9577"
-                  y2="12.9901"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#1724C9" />
-                  <stop offset="1" stop-color="#1C64F2" />
-                </linearGradient>
-                <linearGradient
-                  id="paint1_linear_11430_22515"
-                  x1="28.0593"
-                  y1="10.5837"
-                  x2="19.7797"
-                  y2="2.33321"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#1C64F2" />
-                  <stop offset="1" stop-color="#0092FF" />
-                </linearGradient>
-                <linearGradient
-                  id="paint2_linear_11430_22515"
-                  x1="16.9145"
-                  y1="5.2045"
-                  x2="4.42432"
-                  y2="5.99375"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#0092FF" />
-                  <stop offset="1" stop-color="#45B2FF" />
-                </linearGradient>
-                <linearGradient
-                  id="paint3_linear_11430_22515"
-                  x1="16.0698"
-                  y1="28.846"
-                  x2="27.2866"
-                  y2="25.8192"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#1C64F2" />
-                  <stop offset="1" stop-color="#0092FF" />
-                </linearGradient>
-                <linearGradient
-                  id="paint4_linear_11430_22515"
-                  x1="8.01881"
-                  y1="15.8661"
-                  x2="15.9825"
-                  y2="24.1181"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#1724C9" />
-                  <stop offset="1" stop-color="#1C64F2" />
-                </linearGradient>
-                <linearGradient
-                  id="paint5_linear_11430_22515"
-                  x1="26.2004"
-                  y1="21.8189"
-                  x2="31.7569"
-                  y2="10.6178"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#0092FF" />
-                  <stop offset="1" stop-color="#45B2FF" />
-                </linearGradient>
-                <linearGradient
-                  id="paint6_linear_11430_22515"
-                  x1="6.11387"
-                  y1="9.31427"
-                  x2="3.14054"
-                  y2="20.4898"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#1C64F2" />
-                  <stop offset="1" stop-color="#0092FF" />
-                </linearGradient>
-                <linearGradient
-                  id="paint7_linear_11430_22515"
-                  x1="21.2932"
-                  y1="8.78271"
-                  x2="10.4278"
-                  y2="11.488"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#1724C9" />
-                  <stop offset="1" stop-color="#1C64F2" />
-                </linearGradient>
-                <linearGradient
-                  id="paint8_linear_11430_22515"
-                  x1="7.15667"
-                  y1="21.5399"
-                  x2="14.0824"
-                  y2="31.9579"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stop-color="#0092FF" />
-                  <stop offset="1" stop-color="#45B2FF" />
-                </linearGradient>
-              </defs>
+              <defs></defs>
             </svg>
-            Flowbite
-          </a>
+            ShayBeas Enterprises
+          </h1>
           <span class="block text-sm text-center text-gray-500 dark:text-gray-400">
-            © 2021-2022{" "}
-            <a href="#" class="hover:underline">
-              Flowbite™
-            </a>
-            . All Rights Reserved.
+            © 2021-2022 . All Rights Reserved.
           </span>
           <ul class="flex justify-center mt-5 space-x-5">
             <li>

@@ -1,9 +1,29 @@
 import { Accordion } from "flowbite-react";
+import { useRef, useEffect } from "react";
+import gsap from "gsap/dist/gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 export default function AccordionComp() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    gsap.set("#accordion-all", { opacity: 0 });
+    gsap.to("#accordion-all", {
+      scrollTrigger: {
+        trigger: "#accordion-all",
+        scrub: 1,
+        start: "top bottom",
+        end: "top center",
+      },
+      opacity: 1,
+      ease: "none",
+      duration: 3,
+    });
+  }, []);
+
   return (
     <div className="flex justify-center">
-      <div className="lg:w-2/3 my-20">
+      <div id="accordion-all" className="lg:w-2/3 my-20">
         <Accordion>
           <Accordion.Panel className="">
             <Accordion.Title>

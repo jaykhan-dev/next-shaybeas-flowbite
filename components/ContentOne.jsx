@@ -42,18 +42,19 @@ export default function ContentOne() {
   }, []);
 
   useEffect(() => {
-    gsap.set("#text", { opacity: 0 });
+    gsap.set("#text", { x: -100, opacity: 0 });
     gsap.to("#text", {
       scrollTrigger: {
         trigger: "#text",
         scrub: 1,
         start: "top bottom",
-        end: "top top",
+        end: "top center",
       },
       opacity: 1,
+      x: 0,
       ease: "none",
     });
-  });
+  }, []);
 
   return (
     <section class="bg-white dark:bg-gray-900 my-20">
@@ -79,7 +80,7 @@ export default function ContentOne() {
         </div>
         <div class="grid grid-cols-2 gap-4 mt-8">
           <Image
-            class="w-full rounded-lg"
+            class="w-full rounded-lg lg:translate-x-24 lg:-rotate-12"
             src="/images/lifeguard-100.jpg"
             alt="Florida Beach"
             width={400}
@@ -87,7 +88,7 @@ export default function ContentOne() {
             id="imageOne"
           />
           <Image
-            class="mt-4 w-full lg:mt-10 rounded-lg"
+            class="mt-4 w-full lg:mt-10 rounded-lg lg:rotate-12"
             src="/images/pier-100.jpg"
             alt="Florida Beach 2"
             width={400}

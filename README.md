@@ -1,34 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Shaybeas Enterprises
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+[See Prototype made with NEXT JS](https://next-shaybeas.vercel.app)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+This project is a remake of an earlier marketing site I created for a client which was made with Webflow. By using Next JS for the new version, I have found several benefits in writing code rather than using a proprietary software.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Currently, there is no database which means there is no search functionality or API requests. This prototype is essentially a Proof-of-Concept. It is setup on Github so that any developer can make a pull request to add more functionality. Since Vercel handles all the hosting infrastructure, a HTTPS security is provided when you deploy a project.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Why Next JS?
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+The following reasons sum up why I chose Next JS to recreate a marketing site.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. The right open source softwares tend to be of higher quality because of community input rather than a core of elite developers who may or may not stick around. Great examples of successful open source software include Linux, Bitcoin, and React/Next JS.
+2. Being able to customize every aspect of the site or app depends on your knowledge and skill rather than a paid subscription that unlocks all the tools. In other words, there is more freedom.
+3. Fast load times because of Static Site Generation which loads pages from a CDN or the Edge network. This results in a better User Experience.
+4. The ability to use Server Side Rendering for more complex, dynamic user interfaces which require connecting to an API.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Overall the development experience is positive and efficient. My focus is strictly on creating user interfaces and Next JS provides a great way of doing that.

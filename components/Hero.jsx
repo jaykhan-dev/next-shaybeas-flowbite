@@ -18,11 +18,9 @@ export default function Hero() {
             role="alert"
           >
             <span class="text-xs bg-primary-600 rounded-full text-green-300 px-4 py-1.5 mr-3">
-              New
+              New Lead!
             </span>{" "}
-            <span class="text-sm font-medium">
-              Flowbite is out! See whats new
-            </span>
+            <span class="text-sm font-medium">Take me to Listings</span>
             <svg
               class="ml-2 w-5 h-5"
               fill="currentColor"
@@ -37,11 +35,11 @@ export default function Hero() {
             </svg>
           </a>
           <h1 class="my-8 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-            We invest in the world’s potential
+            Looking for a home in the Sunshine state?
           </h1>
           <p class="my-12 text-lg font-normal text-gray-900 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-            Here at Flowbite we focus on markets where technology, innovation,
-            and capital can unlock long-term value and drive economic growth.
+            Here at ShayBeas Enterprises we focus on technology, innovation, and
+            capital that can unlock long-term value and prosperity.
           </p>
           <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
             <a
@@ -81,7 +79,7 @@ export default function Hero() {
             <span class="font-semibold text-gray-400 uppercase">
               Partnered with
             </span>
-            <div class="grid lg:grid-cols-5 place-items-center gap-4 mt-8 text-gray-500 sm:justify-between">
+            <div class="grid lg:grid-cols-5 place-items-center gap-4 mt-8 text-gray-500">
               <Image
                 src={CBLogo}
                 width={200}

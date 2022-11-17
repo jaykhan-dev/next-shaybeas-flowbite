@@ -7,37 +7,34 @@ export default function House1() {
         <div className="lg:w-2/3 my-20 py-10">
           <div class="py-8 px-4 max-w-2xl lg:py-16">
             <h2 class="mb-2 text-4xl font-semibold leading-none text-gray-900 dark:text-white">
-              Apple iMac 25
+              House Name
             </h2>
             <p class="mb-4 text-xl font-extrabold leading-none text-gray-900 md:text-2xl dark:text-white">
-              $2999
+              $500,000
             </p>
             <dl>
               <dt class="mb-2 font-semibold leading-none text-gray-900 dark:text-white">
                 Details
               </dt>
               <dd class="mb-4 font-light text-gray-500 sm:mb-5 dark:text-gray-400">
-                Standard glass ,3.8GHz 8-core 10th-generation Intel Core i7
-                processor, Turbo Boost up to 5.0GHz, 16GB 2666MHz DDR4 memory,
-                Radeon Pro 5500 XT with 8GB of GDDR6 memory, 256GB SSD storage,
-                Gigabit Ethernet, Magic Mouse 2, Magic Keyboard - US.
+                House is open to tour
               </dd>
             </dl>
             <dl class="flex items-center space-x-6">
               <div>
                 <dt class="mb-2 font-semibold leading-none text-gray-900 dark:text-white">
-                  Category
+                  Sq. Ft.
                 </dt>
                 <dd class="mb-4 font-light text-gray-500 sm:mb-5 dark:text-gray-400">
-                  Electronics/PC
+                  1,274-2465
                 </dd>
               </div>
               <div>
                 <dt class="mb-2 font-semibold leading-none text-gray-900 dark:text-white">
-                  Item weight
+                  Bed
                 </dt>
                 <dd class="mb-4 font-light text-gray-500 sm:mb-5 dark:text-gray-400">
-                  12kg
+                  2-4
                 </dd>
               </div>
             </dl>

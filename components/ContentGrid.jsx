@@ -7,10 +7,10 @@ export default function ContentGrid() {
   gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
-    gsap.set("#header", { x: -50, opacity: 0 });
-    gsap.to("#header", {
+    gsap.set("#header-grid", { x: -50, opacity: 0 });
+    gsap.to("#header-grid", {
       scrollTrigger: {
-        trigger: "#header",
+        trigger: "#header-grid",
         scrub: 1,
         start: "top bottom",
         end: "top top",
@@ -37,13 +37,16 @@ export default function ContentGrid() {
   return (
     <section class="bg-white dark:bg-gray-900">
       <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-        <div id="header" class="max-w-screen-md mb-8 lg:mb-16">
+        <div id="header-grid" class="max-w-screen-md mb-8 lg:mb-16">
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-            Designed for business teams like yours
+            Let us WARP your career this year!
           </h2>
           <p class="text-gray-500 sm:text-xl dark:text-gray-400">
-            Here at Flowbite we focus on markets where technology, innovation,
-            and capital can unlock long-term value and drive economic growth.
+            Your job is to help people find their dream homes. Our job is to
+            make your job as simple as possible. We provide you with the proven
+            system and strategy to help you get it done, but none of that
+            matters unless you are willing to trust the process and put in the
+            work.
           </p>
         </div>
         <div
@@ -65,11 +68,12 @@ export default function ContentGrid() {
                 ></path>
               </svg>
             </div>
-            <h3 class="mb-2 text-xl font-bold dark:text-white">Marketing</h3>
+            <h3 class="mb-2 text-xl font-bold dark:text-white">
+              Property Value
+            </h3>
             <p class="text-gray-500 dark:text-gray-400">
-              Plan it, create it, launch it. Collaborate seamlessly with all the
-              organization and hit your marketing goals every month with our
-              marketing plan.
+              Inflation affects house prices over time. We watch the data to
+              provide good investment strategies.
             </p>
           </div>
           <div>
